@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | Tinah Couture</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+Tinah <span>Couture</span>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+
+</nav>
+
+<section class="checkout">
+
+<h1>Checkout</h1>
+
+<div class="checkout-container">
+
+<div class="billing">
+
+<h2>Billing Details</h2>
+
+<form id="checkoutForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="text" placeholder="County" required>
+
+<input type="text" placeholder="Town/City" required>
+
+<input type="text" placeholder="Delivery Address" required>
+
+<textarea placeholder="Order Notes"></textarea>
+
+<h3>Payment Method</h3>
+
+<label>
+<input type="radio" name="payment" checked>
+M-Pesa
+</label>
+
+<label>
+<input type="radio" name="payment">
+Credit/Debit Card
+</label>
+
+<button class="btn" type="submit">
+Place Order
+</button>
+
+</form>
+
+</div>
+
+<div class="summary">
+
+<h2>Order Summary</h2>
+
+<div id="orderSummary"></div>
+
+<h3>Total:
+<span id="checkoutTotal">
+KSh 0
+</span>
+</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>
