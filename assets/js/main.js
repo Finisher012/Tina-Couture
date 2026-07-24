@@ -3,18 +3,21 @@
 // ===============================
 
 // Sticky Navbar
-window.addEventListener("scroll", () => {
-    const navbar = document.querySelector(".navbar");
+const navbar = document.querySelector(".navbar");
 
-    if (window.scrollY > 50) {
-        navbar.style.padding = "15px 8%";
-        navbar.style.background = "#111";
-    } else {
-        navbar.style.padding = "20px 8%";
-        navbar.style.background = "rgba(17,17,17,.95)";
-    }
-});
+if (navbar) {
+    window.addEventListener("scroll", () => {
 
+        if (window.scrollY > 50) {
+            navbar.style.padding = "15px 8%";
+            navbar.style.background = "#111";
+        } else {
+            navbar.style.padding = "20px 8%";
+            navbar.style.background = "rgba(17,17,17,.95)";
+        }
+
+    });
+}
 // Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
