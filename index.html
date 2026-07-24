@@ -7,9 +7,11 @@
 
 <title>Tinah Couture | Luxury Fashion</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 
-<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="assests/css/responsive.css">
+
+<link rel="stylesheet" href="assets/css/variables.css"
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -24,51 +26,263 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <body>
 
-<header>
+<!-- ===== NAVBAR ===== -->
+<header class="header">
+    <div class="container nav-container">
 
-<nav class="navbar">
+        <a href="index.html" class="logo">
+            <span>Tinah</span> Couture
+        </a>
 
-<div class="logo">
-Tinah <span>Couture</span>
-</div>
+        <nav class="nav" id="navMenu">
+            <a href="index.html" class="active">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-<ul>
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-bag"></i>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
 
-<li><a href="index.html">Home</a></li>
-
-<li><a href="Shop.html">Shop</a></li>
-
-<li><a href="collections.html">Collections</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-<li><a href="login.html"><i class="fa fa-user"></i></a></li>
-
-<li><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
-
-</ul>
-
-</nav>
-
+    </div>
 </header>
 
+<!-- ===== HERO SECTION ===== -->
 <section class="hero">
+    <div class="hero-overlay"></div>
 
-<div class="hero-content">
+    <div class="hero-content">
+        <span class="hero-subtitle">New Collection 2026</span>
 
-<h1>Luxury Fashion Designed For You</h1>
+        <h1>Timeless Fashion <br>Designed For You</h1>
 
-<p>
-Elegant. Timeless. Sophisticated.
-</p>
+        <p>
+            Discover elegant, modern and affordable fashion pieces
+            crafted to elevate your confidence every day.
+        </p>
 
-<a href="Shop.html" class="btn">
-Shop Now
-</a>
+        <div class="hero-buttons">
+            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+            <a href="#" class="btn btn-secondary">Explore Collection</a>
+        </div>
+    </div>
+</section>
 
-</div>
+<section class="categories">
+
+    <div class="section-title">
+        <h2>Shop by Category</h2>
+        <p>Discover styles crafted for every occasion.</p>
+    </div>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            <img src="assets/images/collections/women.jpg" alt="Women">
+            <div class="overlay">
+                <h3>Women</h3>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="assets/images/collections/men.jpg" alt="Men">
+            <div class="overlay">
+                <h3>Men</h3>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="assets/images/collections/shoes.jpg" alt="Shoes">
+            <div class="overlay">
+                <h3>Shoes</h3>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="assets/images/collections/accessories.jpg" alt="Accessories">
+            <div class="overlay">
+                <h3>Accessories</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="featured-products">
+
+    <div class="section-title">
+        <h2>Featured Collection</h2>
+        <p>Our most loved fashion pieces.</p>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+
+            <span class="badge">New</span>
+
+            <img src="assets/images/products/product1.jpg" alt="Product">
+
+            <div class="product-info">
+
+                <h3>Elegant Blazer</h3>
+
+                <p>KSh 4,500</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="badge sale">Sale</span>
+
+            <img src="assets/images/products/product2.jpg" alt="Product">
+
+            <div class="product-info">
+
+                <h3>Luxury Dress</h3>
+
+                <p>KSh 3,800</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="badge">New</span>
+
+            <img src="assets/images/products/product3.jpg" alt="Product">
+
+            <div class="product-info">
+
+                <h3>Classic Heels</h3>
+
+                <p>KSh 2,900</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="badge">Hot</span>
+
+            <img src="assets/images/products/product4.jpg" alt="Product">
+
+            <div class="product-info">
+
+                <h3>Leather Handbag</h3>
+
+                <p>KSh 5,200</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="why-us">
+
+    <div class="section-title">
+        <h2>Why Shop With Tinah Couture?</h2>
+        <p>Fashion, quality, and service you can trust.</p>
+    </div>
+
+    <div class="features-grid">
+
+        <div class="feature-card">
+            <i class="fas fa-gem"></i>
+            <h3>Premium Quality</h3>
+            <p>Carefully selected fashion pieces made to last.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-truck"></i>
+            <h3>Fast Delivery</h3>
+            <p>Reliable delivery across Kenya.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-lock"></i>
+            <h3>Secure Shopping</h3>
+            <p>Your information is protected every step of the way.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-headset"></i>
+            <h3>Customer Support</h3>
+            <p>Friendly assistance whenever you need help.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="testimonials">
+
+    <div class="section-title">
+        <h2>What Our Customers Say</h2>
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+            <p>"Amazing quality and excellent customer service!"</p>
+            <h4>— Jane M.</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"Fast delivery and exactly what I ordered."</p>
+            <h4>— Brian K.</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"Tinah Couture is now my favourite fashion store."</p>
+            <h4>— Faith W.</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="newsletter">
+
+    <h2>Stay in Style</h2>
+
+    <p>Subscribe for exclusive offers and new arrivals.</p>
+
+    <form>
+
+        <input
+            type="email"
+            placeholder="Enter your email">
+
+        <button>
+
+            Subscribe
+
+        </button>
+
+    </form>
 
 </section>
 
@@ -106,11 +320,80 @@ Shop Now
 
 </section>
 
-<footer>
+<section class="newsletter">
 
-<h3>Tinah Couture</h3>
+    <h2>Stay in Style</h2>
 
-<p>Luxury Fashion for Every Occasion</p>
+    <p>Subscribe for exclusive offers and new arrivals.</p>
+
+    <form>
+
+        <input
+            type="email"
+            placeholder="Enter your email">
+
+        <button>
+
+            Subscribe
+
+        </button>
+
+    </form>
+
+</section>
+
+<>
+
+    <div class="footer-container">
+
+        <div>
+            <h3>Tinah Couture</h3>
+            <p>Luxury Fashion for Every Occasion.</p>
+        </div>
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <a href="#">Home</a>
+
+            <a href="#">Shop</a>
+
+            <a href="#">Contact</a>
+
+        </div>
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p>Email</p>
+
+            <p>Phone</p>
+
+            <p>WhatsApp</p>
+
+        </div>
+
+        <div>
+
+            <h4>Follow Us</h4>
+
+            Facebook
+
+            Instagram
+
+            TikTok
+
+        </div>
+
+    </div>
+
+
+
+
+
+
 
 
 <div class="social">
@@ -132,7 +415,7 @@ Shop Now
 
 </footer>
 
-<script src="js/Script.js"></script>
+<script src="assets/js/Script.js"></script>
 
 </body>
 </html>
