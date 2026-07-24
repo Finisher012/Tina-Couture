@@ -7,8 +7,8 @@
 
 <title>Shop | Tinah Couture</title>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
 
@@ -78,10 +78,76 @@ placeholder="Search products...">
 </section>
 
 <section class="products" id="products">
+<main class="shop-container">
 
+    <!-- Sidebar -->
+    <aside class="shop-sidebar">
+
+        <h2>Filters</h2>
+
+        <div class="filter-group">
+            <h3>Categories</h3>
+
+            <label><input type="checkbox"> Dresses</label>
+            <label><input type="checkbox"> Men</label>
+            <label><input type="checkbox"> Shoes</label>
+            <label><input type="checkbox"> Accessories</label>
+        </div>
+
+        <div class="filter-group">
+            <h3>Price</h3>
+
+            <input type="range">
+        </div>
+
+        <div class="filter-group">
+            <h3>Size</h3>
+
+            <button>S</button>
+            <button>M</button>
+            <button>L</button>
+            <button>XL</button>
+        </div>
+
+    </aside>
+
+    <!-- Products -->
+
+    <section class="shop-content">
+
+        <div class="shop-top">
+
+            <input
+                id="searchBox"
+                type="text"
+                placeholder="Search products...">
+
+            <select id="sortProducts">
+
+                <option>Newest</option>
+
+                <option>Price Low-High</option>
+
+                <option>Price High-Low</option>
+
+                <option>Popularity</option>
+
+            </select>
+
+        </div>
+
+        <div
+            id="products"
+            class="products-grid">
+
+        </div>
+
+    </section>
+
+</main>
 </section>
 
-<script src="js/shop.js"></script>
-
+<script src="assets/js/shop.js"></script>
+<script src="assets/js/product.js"></script>
 </body>
 </html>
